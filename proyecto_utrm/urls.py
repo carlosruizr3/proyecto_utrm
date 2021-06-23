@@ -18,7 +18,7 @@ from django.urls import path
 from ejercicio import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('ejercicio/', views.home),
-    path('otrapagina/', views.otra_pagina),
+    path('', views.home, name='home'),
+    path('createpassword/', views.create_password, name='password'),
+    path('nuevapagina/', views.nueva, name='nueva'),
 ]
